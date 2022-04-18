@@ -19,18 +19,15 @@ jobs:
           # Test the latest stable release
           - php-version: '7.3'
           - php-version: '7.4'
-            symfony-version: '4.*'
+            symfony-version: '4.4.*'
           - php-version: '7.4'
-            symfony-version: '5.*'
-          # Test Symfony LTS versions. Read more at https://github.com/symfony/lts
-          - php-version: '7.4'
-            dependencies: 'symfony/lts:^3'
+            symfony-version: '5.4.*'
           - php-version: '8.0'
-            symfony-version: '6.*'
+            symfony-version: '6.0.*'
           # Minimum supported dependencies with the oldest PHP version
           - php-version: '7.3'
             composer-flag: '--prefer-stable --prefer-lowest'
-            symfony-version: '4.3'
+            symfony-version: '4.4'
           # Test latest unreleased versions
           - php-version: '8.0'
             symfony-version: '6.*'
